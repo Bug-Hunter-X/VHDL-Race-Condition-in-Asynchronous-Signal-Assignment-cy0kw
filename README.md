@@ -1,0 +1,3 @@
+This repository demonstrates a subtle race condition that can occur in VHDL code when dealing with asynchronous signal assignments. The bug arises because the assignment to `data_out` happens after the assignment to `internal_data`. If the `data_in` signal changes during the same clock cycle, the `data_out` might not reflect this change.
+
+The solution demonstrates a proper way to handle signal assignments to avoid race conditions.
